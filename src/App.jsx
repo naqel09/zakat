@@ -1,14 +1,13 @@
 import { useState } from 'react'
 import './App.css'
+import Homepage from './components/Homepage'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <h1 className='text-blue-400 text-3xl'>hello world</h1>
-      </div>
+      <Homepage />
     </>
   )
 }

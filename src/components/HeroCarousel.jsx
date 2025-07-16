@@ -15,11 +15,26 @@ function HeroCarousel() {
         <div className='relative w-full  mx-auto overflow-hidden'>
             <div className='flex transition-transform duration-500 ease-in-out' style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                 {images.map((image, index) => (
-                <img src={images[currentIndex]} alt="carousel" className='w-full flex-shrink-0 h-screen object-cover' />
+                    <img key={index} src={images[currentIndex]} alt="carousel" className='w-full flex-shrink-0 h-screen object-cover' />
                 ))}
+
             </div>
-            <button onClick={prevSlide} className='absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-400 text-white px-3 py-2 rounded-full cursor-pointer hover:bg-gray-500'>prev</button>
-            <button onClick={nextSlide} className='absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-400 text-white px-3 py-2 rounded-full cursor-pointer hover:bg-gray-500'>next</button>
+            <div className='absolute inset-0 flex flex-col justify-center z-10 px-6 ml-16  '>
+                <h1 className='text-[5rem] font-semibold'>
+                    <span className='text-pink-400 mr-4'>DKM</span>
+                    <span className='text-yellow-400'>Al-Ikhlas</span>
+                </h1>
+                <p className='text-[2rem] mt-10 font-thin text-white'>Komplek De Green Villa Mutiara Residence Desa Cipagalo</p>
+                <p className='text-[2rem] font-thin text-white'>Kecamatan Bojongsoang Kabupaten Bandung 40287 Jawa Barat</p>
+                <p className='text-[2rem] font-thin text-white'>081-5617-0920</p>
+                <p className='text-[2rem] font-thin text-white'>alikhlas.degreen@gmail.com</p>
+            </div>
+
+            <div className='hidden absolute inset-0 md:flex items-center justify-between z-20 px-6 '>
+                <button onClick={prevSlide} className='absolute top-1/2 left-2 transform -translate-y-1/2 bg-transparent text-white px-3 py-2 rounded-full cursor-pointer'>prev</button>
+                <button onClick={nextSlide} className='absolute top-1/2 right-2 transform -translate-y-1/2 bg-transparent text-white px-3 py-2 rounded-full cursor-pointer'>next</button>
+            </div>
+
         </div>
     )
 }

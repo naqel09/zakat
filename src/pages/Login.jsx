@@ -28,7 +28,7 @@ function Login() {
                     <p className='text-sm text-center mb-2'>silahkan masukkan username dan password anda</p>
                 </div>
                 <div className='bg-purple-950 text-white p-10 lg:rounded-r-2xl md:rounded-none'>
-                    <h1 className='text-xl font-bold text-purple-600 text-center'>SIGN IN</h1>
+                    <h1 className='text-xl font-bold text-white text-center'>SIGN IN</h1>
                     <form onSubmit={handleLogin} className='mt-4'>
                         <div className='mb-4'>
                             <label htmlFor="username" className='block mb-1 text-sm'>username</label>

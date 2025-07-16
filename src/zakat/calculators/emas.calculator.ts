@@ -65,5 +65,5 @@ export class EmasCalculator implements IZakatCalculator {
 
   getPercentage(): number {
     return 2.5;
-  }
+  } 
 }

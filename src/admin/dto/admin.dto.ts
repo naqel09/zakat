@@ -53,12 +53,12 @@ export class ChangePasswordDto {
 
     @ApiProperty()
     @IsString()
-    @IsStrongPassword({
-        minLength: 6,
-        // minNumbers: 1,
-        // minUppercase: 1,
-        // minLowercase: 1,
-    })
+    // @IsStrongPassword({
+    //     minLength: 6
+    //     // minNumbers: 1,
+    //     // minUppercase: 1,
+    //     // minLowercase: 1,
+    // })
     newPassword: string;
 }
 

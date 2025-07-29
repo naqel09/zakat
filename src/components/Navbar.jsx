@@ -13,9 +13,9 @@ function Navbar() {
                         <option value="">Zakat fitrah</option>
                         <option value="">Zakat mal</option>
                     </select>
-                    <Link href="#" className="text-purple-800 hover:text-purple-500 font-medium">Sedekah</Link>
-                    <Link href="#" className="text-purple-800 hover:text-purple-500 font-medium">Wakaf</Link>
-                    <Link href="#" className="text-purple-800 hover:text-purple-500 font-medium">Kalkulator</Link>
+                    <Link to="#" className="text-purple-800 hover:text-purple-500 font-medium">Sedekah</Link>
+                    <Link to="#" className="text-purple-800 hover:text-purple-500 font-medium">Wakaf</Link>
+                    <Link to="/kalkulator" className="text-purple-800 hover:text-purple-500 font-medium">Kalkulator</Link>
                 </div>
                 {/* <ul className='flex space-x-8 text-pink-800 font-bold text-xl'>
                     <li>zakat</li>

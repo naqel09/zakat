@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 function Footer() {
     return (
-        <div className='grid grid-cols-3 justify-items-center gap-3 bg-purple-800'>
+        <div className='grid grid-cols-1 md:grid-cols-3 justify-items-center gap-3 bg-purple-800 max-w-screen'>
             <div className='text-white'>
                 <h1 className='font-semibold text-3xl mb-5'>Tentang website</h1>
                 <p>pembayaran</p>
